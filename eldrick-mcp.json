@@ -1,0 +1,37 @@
+{
+  "$comment": "ELDRICK as a remote MCP tool for the xAI API (https://docs.x.ai/developers/tools/remote-mcp). Shared by the Python and TypeScript starters and checked offline by server/lib/grok-bot-template.test.ts. The ELDRICK key is never stored here: each starter reads ELDRICK_API_KEY from the environment and adds it as `authorization` at runtime.",
+  "tool": {
+    "type": "mcp",
+    "server_url": "https://api.eldrick.com/mcp",
+    "server_label": "eldrick",
+    "server_description": "ELDRICK golf club fitting: fits drivers, fairway woods, hybrids, irons and wedges from a golfer's swing, scores and compares real clubs, sizes grips, checks bag gapping and finds club fitters.",
+    "allowed_tools": [
+      "analyze_fitting",
+      "get_fitting",
+      "search_clubs",
+      "get_club",
+      "compare_clubs",
+      "score_clubs",
+      "build_store_link",
+      "get_grip_size",
+      "analyze_bag_gapping",
+      "find_fitter"
+    ],
+    "headers": {
+      "X-ELDRICK-Platform": "grok",
+      "X-ELDRICK-Client": "eldrick-grok-bot"
+    }
+  },
+  "freeTools": [
+    "get_fitting",
+    "search_clubs",
+    "get_club",
+    "compare_clubs",
+    "score_clubs",
+    "build_store_link",
+    "get_grip_size",
+    "analyze_bag_gapping",
+    "find_fitter"
+  ],
+  "model": "grok-4.7"
+}
