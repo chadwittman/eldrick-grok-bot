@@ -4,7 +4,7 @@ A starter for building a golf club fitter on Grok with the xAI API. Grok
 interviews the golfer, runs an ELDRICK fitting, shows the specs and top picks
 with store links, and finds a club fitter nearby.
 
-Built on 100,000+ fittings: trained on 80,000, plus 25,000+ ELDRICK has done itself.
+Built on 100,000+ fittings.
 
 ELDRICK is a remote MCP server at `https://api.eldrick.com/mcp`. xAI's API
 attaches remote MCP servers as a server-side tool: you name the server in the
